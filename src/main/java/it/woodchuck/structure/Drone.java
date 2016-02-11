@@ -24,21 +24,13 @@ public class Drone {
     public double timeToTravel(Coordinates a , Coordinates b){
         int x = a.getX() - b.getX();
         int y = a.getY() - b.getY();
-
         return Math.sqrt( x * x + y * y);
     }
 
     public double nextStop(){
-
         return timeToTravel(currentCoordinate,futureCoordinates.get(0));
 
     }
-
-
-    public void load(int weight, int product)
-
-
-
 
 
 }
